@@ -16,8 +16,10 @@
 <!--   📜 https://developer.mozilla.org/en-US/docs/Web/API/ParentNode/append -->
 
 <body>
-  <div id="root" />
   <script type="module">
+    const divRoot = document.createElement("div")
+    divRoot.id = "root"
+    document.body.append(divRoot)
     const divContainer = document.createElement('div')
     divContainer.textContent = 'Hello World'
     divContainer.className = 'container'
